@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="base_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="LevelBar_TextView_Level">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <attr name="left_text" format="string" />
+    <attr name="left_text_size" format="dimension" />
+    <attr name="text_size" format="dimension" />
+    <attr name="text" format="string" />
+    <attr name="left_text_color" format="color" />
+    <attr name="text_color" format="color" />
+
+    <declare-styleable name="LeftTextRightIconTextView">
+        <attr name="left_text" />
+        <attr name="text" />
+        <attr name="left_text_size" />
+        <attr name="text_size" />
+        <attr name="left_text_color" />
+        <attr name="text_color" />
+        <attr name="right_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="from_color" format="color" />
+        <attr name="to_color" format="color" />
+    </declare-styleable>
+</resources>

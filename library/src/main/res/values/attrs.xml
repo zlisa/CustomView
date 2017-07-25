@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftTextEditText">
+        <attr name="left_text" />
+        <attr name="text" />
+        <attr name="left_text_size" />
+        <attr name="text_size" />
+        <attr name="left_text_color" />
+        <attr name="text_color" />
+        <attr name="left_text_padding" format="dimension" />
+        <attr name="hint_color" format="color" />
+        <attr name="hint" format="string" />
+        <attr name="ime_options" format="enum">
+            <enum name="IME_ACTION_DONE" value="6" />
+            <enum name="IME_ACTION_GO" value="2" />
+            <enum name="IME_ACTION_NEXT" value="5" />
+            <enum name="IME_ACTION_NONE" value="1" />
+            <enum name="IME_ACTION_PREVIOUS" value="7" />
+            <enum name="IME_ACTION_SEARCH" value="3" />
+            <enum name="IME_ACTION_SEND" value="4" />
+            <enum name="IME_ACTION_UNSPECIFIED" value="0" />
+            <enum name="IME_FLAG_FORCE_ASCII" value="-2147483648" />
+            <enum name="IME_FLAG_NAVIGATE_NEXT" value="134217728" />
+            <enum name="IME_FLAG_NAVIGATE_PREVIOUS" value="67108864" />
+            <enum name="IME_FLAG_NO_ACCESSORY_ACTION" value="536870912" />
+            <enum name="IME_FLAG_NO_ENTER_ACTION" value="1073741824" />
+            <enum name="IME_FLAG_NO_EXTRACT_UI" value="268435456" />
+            <enum name="IME_FLAG_NO_FULLSCREEN" value="33554432" />
+            <enum name="IME_FLAG_NO_PERSONALIZED_LEARNING" value="16777216" />
+            <enum name="IME_MASK_ACTION" value="255" />
+            <enum name="IME_NULL" value="0" />
+        </attr>
+
+        <attr name="input_type" format="enum">
+            <enum name="TYPE_CLASS_DATETIME" value="4" />
+            <enum name="TYPE_CLASS_NUMBER" value="2" />
+            <enum name="TYPE_CLASS_PHONE" value="3" />
+            <enum name="TYPE_CLASS_TEXT" value="1" />
+            <enum name="TYPE_DATETIME_VARIATION_DATE" value="16" />
+            <enum name="TYPE_DATETIME_VARIATION_NORMAL" value="0" />
+            <enum name="TYPE_DATETIME_VARIATION_TIME" value="32" />
+            <enum name="TYPE_MASK_CLASS" value="15" />
+            <enum name="TYPE_MASK_FLAGS" value="16773120" />
+            <enum name="TYPE_MASK_VARIATION" value="4080" />
+            <enum name="TYPE_NULL" value="0" />
+            <enum name="TYPE_NUMBER_FLAG_DECIMAL" value="8192" />
+            <enum name="TYPE_NUMBER_FLAG_SIGNED" value="4096" />
+            <enum name="TYPE_NUMBER_VARIATION_NORMAL" value="0" />
+            <enum name="TYPE_NUMBER_VARIATION_PASSWORD" value="16" />
+            <enum name="TYPE_TEXT_FLAG_AUTO_COMPLETE" value="65536" />
+            <enum name="TYPE_TEXT_FLAG_AUTO_CORRECT" value="32768" />
+            <enum name="TYPE_TEXT_FLAG_CAP_CHARACTERS" value="4096" />
+            <enum name="TYPE_TEXT_FLAG_CAP_SENTENCES" value="16384" />
+            <enum name="TYPE_TEXT_FLAG_CAP_WORDS" value="8192" />
+            <enum name="TYPE_TEXT_FLAG_IME_MULTI_LINE" value="262144" />
+            <enum name="TYPE_TEXT_FLAG_MULTI_LINE" value="131072" />
+            <enum name="TYPE_TEXT_FLAG_NO_SUGGESTIONS" value="524288" />
+            <enum name="TYPE_TEXT_VARIATION_EMAIL_ADDRESS" value="32" />
+            <enum name="TYPE_TEXT_VARIATION_EMAIL_SUBJECT" value="48" />
+            <enum name="TYPE_TEXT_VARIATION_FILTER" value="176" />
+            <enum name="TYPE_TEXT_VARIATION_LONG_MESSAGE" value="80" />
+            <enum name="TYPE_TEXT_VARIATION_NORMAL" value="0" />
+            <enum name="TYPE_TEXT_VARIATION_PASSWORD" value="128" />
+            <enum name="TYPE_TEXT_VARIATION_PERSON_NAME" value="96" />
+            <enum name="TYPE_TEXT_VARIATION_PHONETIC" value="192" />
+            <enum name="TYPE_TEXT_VARIATION_POSTAL_ADDRESS" value="112" />
+            <enum name="TYPE_TEXT_VARIATION_SHORT_MESSAGE" value="64" />
+            <enum name="TYPE_TEXT_VARIATION_URI" value="16" />
+            <enum name="TYPE_TEXT_VARIATION_VISIBLE_PASSWORD" value="144" />
+            <enum name="TYPE_TEXT_VARIATION_WEB_EDIT_TEXT" value="160" />
+            <enum name="TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS" value="208" />
+            <enum name="TYPE_TEXT_VARIATION_WEB_PASSWORD" value="224" />
+        </attr>
+    </declare-styleable>
+</resources>
