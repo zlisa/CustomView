@@ -21,23 +21,22 @@ import com.wall.R
 class SingleChoiceDialog(context: Context) {
 
     var mDialog: AlertDialog? = null
-    var mCustomView: ViewGroup? = null
     var mRecyclerView: RecyclerView? = null
     var mButtonGroup: ButtonGroup? = null
 
     init {
-        mCustomView = (LayoutInflater.from(context).inflate(R.layout.layout_single_choice, null) as ViewGroup?)!!
+        val mCustomView = (LayoutInflater.from(context).inflate(R.layout.layout_single_choice, null) as ViewGroup?)!!
         mButtonGroup = ButtonGroup(context)
 
-        mCustomView?.let {
-            mCustomView?.addView(mButtonGroup, mCustomView!!.childCount)
-        }
+        mCustomView.addView(mButtonGroup, mCustomView.childCount)
 
         mDialog = AlertDialog.Builder(context)
                 .setView(mCustomView)
                 .create()
 
-        mRecyclerView = (mCustomView?.findViewById(R.id.recycler_view) as RecyclerView?)!!
+        mCustomView.findViewById<RecyclerView>(R.id.recycler_view)
+
+        mRecyclerView = mCustomView.findViewById<RecyclerView>(R.id.recycler_view)
         mRecyclerView?.layoutManager = LinearLayoutManager(context)
     }
 

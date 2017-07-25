@@ -18,22 +18,19 @@ class WheelViewDialog(context: Context) {
     var mDialog: AlertDialog? = null
     var mWheelView: WheelView? = null
 
-    var mCustomView: ViewGroup? = null
     var mButtonGroup: ButtonGroup? = null
 
     init {
-        mCustomView = (LayoutInflater.from(context).inflate(R.layout.layout_wheel_view, null) as ViewGroup?)!!
+        val mCustomView = (LayoutInflater.from(context).inflate(R.layout.layout_wheel_view, null) as ViewGroup?)!!
         mButtonGroup = ButtonGroup(context)
 
-        mCustomView?.let {
-            mCustomView?.addView(mButtonGroup, mCustomView!!.childCount)
-        }
+        mCustomView.addView(mButtonGroup, mCustomView.childCount)
 
         mDialog = AlertDialog.Builder(context)
                 .setView(mCustomView)
                 .create()
 
-        mWheelView = (mCustomView?.findViewById(R.id.wheel_view) as WheelView?)!!
+        mWheelView = mCustomView.findViewById<WheelView>(R.id.wheel_view)
     }
 
     public fun addButton(text: String, onClickListener: View.OnClickListener): WheelViewDialog {
